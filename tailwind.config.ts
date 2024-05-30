@@ -7,8 +7,18 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
       screens: {
+        sm: "100%",
+        md: "100%",
+        lg: "1024px",
+        xl: "1280px",
         "2xl": "1400px",
       },
     },
@@ -57,6 +67,13 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
+      maxWidth: {
+        '2xs': '16rem',
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -75,4 +92,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

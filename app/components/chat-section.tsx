@@ -25,7 +25,7 @@ export default function ChatSection() {
   });
 
   return (
-    <div className="space-y-4 max-w-5xl w-full">
+    <div className="space-y-4 md:space-y-6 lg:space-y-8 max-w-full md:max-w-3xl lg:max-w-5xl w-full md:w-3/4 lg:w-2/3">
       <ChatMessages
         messages={messages}
         isLoading={isLoading}
