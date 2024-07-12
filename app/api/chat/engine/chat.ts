@@ -16,6 +16,6 @@ export async function createChatEngine() {
   return new ContextChatEngine({
     chatModel: Settings.llm,
     retriever,
-    systemPrompt: process.env.SYSTEM_PROMPT,
+    systemPrompt: "You are an expert in answering questions about Sanath career journey. Please answer questions only related to Sanath career journey.",
   });
 }
